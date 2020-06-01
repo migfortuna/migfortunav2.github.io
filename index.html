@@ -1,52 +1,125 @@
 <html>
     <head>
         <title>Miguel Fortuna V2.0</title>
-        <link rel="stylesheet" href="css/index.css">
         <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/nav.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <!-- Scroll Button -->
+        <div class="arrowButton">
+            <a href="#"><img src="images/arrow.png" width="35" id="arrowButton"></a>
+        </div>
+
+        <!-- NavBar -->
+        <!-- <nav class="navbar">
+            <ul>
+                <li><a href="#wrapper1" class="nav-item">Home</a></li>
+                <li><a href="#wrapper2" class="nav-item">Background</a></li>
+                <li><a href="#wrapper3" class="nav-item">Education</a></li>
+                <li><a href="#wrapper4" class="nav-item">Experience</a></li>
+                <li><a href="#wrapper5" class="nav-item">Extracurricular</a></li>
+                <li><a href="#wrapper6" class="nav-item">Projects</a></li>
+                <li><a href="#wrapper7" class="nav-item">Skills</a></li>
+            </ul>
+        </nav> -->
+
+        <!-- Wrapper 1 -->
         <div class="wrapper1">
             <div class="section1">
                 <div class="header">
-                    <h1>MIGUEL ALEJANDRO GRAY FORTUNA</h1>
+                    <h1 id="name"></h1>
+                </div>
+
+                <div class="homeBody">
+                    <center><h2 id="role"></h2></center>
                 </div>
             </div>
             <div class="section2">
                 <div class="menuItems">
-                    <div><p><a href="#wrapper2">Background</a></p></div>
-                    <div><p><a href="#wrapper3">Education</a></p></div>
-                    <div><p><a href="#wrapper4">Experience</a></p></div>
-                    <div><p><a href="#wrapper5">Extra-Curricular</a></p></div>
-                    <div><p><a href="#wrapper6">Projects</a></p></div>
-                    <div><p><a href="#wrapper7">Skills</a></p></div>   
+                    <p><a href="#wrapper2">Background</a></p>
+                    <p><a href="#wrapper3">Education</a></p>
+                    <p><a href="#wrapper4">Experience</a></p>
+                    <p><a href="#wrapper5">Extracurricular</a></p>
+                    <p><a href="#wrapper6">Projects</a></p>
+                    <p><a href="#wrapper7">Skills</a></p>  
                 </div>
             </div>
-            <!-- <div class="section3">
-                <div class="iconWrapper">
-                    <a href="" target="_blank"><img src="images/resume.png" class="image"></a>
-                    <a href="https://www.facebook.com/migfort" target="_blank"><img src="images/facebook.png" class="image"></a>
-                    <a href="https://www.instagram.com/migfortuna/" target="_blank"><img src="images/instagram.png" class="image"></a>
-                    <a href="mailto:miguelfortuna98@gmail.com" target="_blank"><img src="images/gmail.png" class="image"></a>
-                </div>
-            </div> -->
         </div>
 
+        <!-- Wrapper 2 -->
         <div class="wrapper2" id="wrapper2">
-            
+            <div class="wrapperHeader">
+                <h1>ABOUT ME</h1>
+            </div>
         </div>
 
+        <!-- Wrapper 3 -->
         <div class="wrapper3" id="wrapper3">
-
+            <div class="wrapperHeader">
+                <h1>EDUCATION</h1>
+            </div>
+            <div class="educationBody1" onclick="openInNewTab('https://www.ateneo.edu/')">
+                <div class="educationArrow">
+                    <a href=""><img src="images/arrow2.png" id="educationArrow"></a>
+                </div>
+                <div class="schoolLogo"><img src="images/ateneo.png"></div>
+                <div>
+                    <h2>Ateneo de Manila University</h2>
+                </div>
+                <div>
+                    <p>Class of 2020</p>
+                    <p>Bachelor of Science</p>
+                    <p>Management Information Systems</p>
+                </div>
+            </div>
+            <div class="educationBody2" onclick="openInNewTab('https://www.dlszobel.edu.ph/')">
+                <div class="educationArrow">
+                    <a href=""><img src="images/arrow2.png" id="educationArrow"></a>
+                </div>
+                <div class="schoolLogo"><img src="images/dlsz.png"></div>
+                <div>
+                    <h2>De La Salle Santiago Zobel</h2>
+                </div>
+                <div>
+                    <p>Class of 2016</p>
+                </div>
+            </div>
         </div>
 
+        <!-- Wrapper 4 -->
         <div class="wrapper4" id="wrapper4">
-
+            <div class="wrapperHeader">
+                <h1>WORK EXPERIENCE</h1>
+            </div>
+            <div class="experienceBody">
+                <div>
+                    <h2>CTK Inc.</h2>
+                    <p>Developer</p>
+                    <p>September 2018 - May 2019</p>
+                    <p></p>
+                </div>
+                <div>
+                    <h2>SGV & Co.</h2>
+                    <p>Intern Developer</p>
+                    <p>June 2019 - July 2019</p>
+                    <p></p>
+                </div>
+                <div>
+                    <h2>Pacific Properties Condominium</h2>
+                    <p>Front-end Developer</p>
+                    <p>September 2019 - May 2020</p>
+                    <p></p>
+                </div>
+            </div>
         </div>
 
         <div class="wrapper5" id="wrapper5">
-
+            <div class="wrapperHeader">
+                <h1>EXTRACURRICULAR</h1>
+            </div>
         </div>
 
         <div class="wrapper6" id="wrapper6">

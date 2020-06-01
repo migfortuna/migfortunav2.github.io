@@ -1,0 +1,45 @@
+nav{
+    width: 100vw;
+}
+
+ul{
+    padding: 0;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+li{
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav-item{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 1px 10px 1px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+    margin: 1vw 1vw;
+
+    transition: all 0.5s;
+}
+
+.nav-item:hover{
+    color: white;
+    background-color: black;
+}
+
+@media (min-width: 768px){
+    ul{
+        flex-direction: row;
+    }
+    li{
+        margin: 0;
+    }
+    .nav-item{
+        display: block;
+    }
+}
