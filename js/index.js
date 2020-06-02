@@ -22,7 +22,7 @@ printText
 printText
 (
     "role",
-    "<span>Junior Front-End Developer</span>",
+    "<span>JUNIOR FRONT END DEVELOPER</span>",
     70
 );
 
