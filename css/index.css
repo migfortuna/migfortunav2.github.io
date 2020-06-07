@@ -7,7 +7,9 @@ html{
 }
 
 body{
-    font-family: 'Source Code Pro';
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro";
 }
 
 @font-face{
@@ -20,61 +22,72 @@ body{
     src: url("../fonts/guidon.otf");
 }
 
+
+
+/* ======================================================================= */
+
+
+
+/* All Headers */
 .wrapperHeader{
     text-align: center;
 }
 
 .wrapperHeader h1{
     font-size: 40px;
-
 }
 
-/* Scroll Button */
-.arrowButton{
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-}
-
-#arrowButton{
-    transform: rotate(-90deg);
-}
-
-/* Navigation Bar */
-.navbar{
-    border: none;
-    border-radius: 0;
-    background-color: black;
-    box-shadow: 0px 5px 10px 5px grey;
-}
-
-.container-fluid{
-    margin: 10px 0px 10px 0px;
-}
-
-.navbar-toggle{
-    background-color: black;
-}
-
-#navbar-brand{
-    color: white;
-    font-size: 25px;
-}
-
-#myNavbar a{
-    color: white;
-    transition: all 0.5s;
-    font-size: 18px;
-}
-
-#myNavbar a:hover{
-    transform: scale(1.35) skew(5deg);
+.fade{
+    transition: 0.05s;
 }
 
 
 
 
 /* =============================================================================== */
+
+
+
+/* Navigation Bar */
+.navbar-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+  
+.navbar-ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.navbar-ul li a:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+  
+.active{
+    background-color: #4CAF50;
+}
+
+.navbar-fade{
+    transition: 0.5s;
+}
+
+
+
+/* =============================================================================== */
+
+
 
 
 /* Wrapper 1 */
@@ -84,12 +97,8 @@ body{
 
 .section1{
     text-align: center;
-    width: 80%;
-    height: 30%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 25%;
 }
 
 .header{
@@ -138,6 +147,7 @@ body{
     height: 100%;
 }
 
+
 .aboutBody{
     text-align: center;
     margin: 0px 30px 0px 30px;
@@ -178,9 +188,8 @@ body{
 
 
 /* Wrapper 3 */
-.educationBody{
+.wrapper3{
     height: 100%;
-    margin-top: 20px;
 }
 
 .schoolBody{
@@ -219,17 +228,15 @@ body{
 /* Wrapper 4 */
 .wrapper4{
     text-align: center;
-    margin-bottom: 70px;
+    height: 100%;
 }
 
 .experienceBody div{
     border-radius: 5px;
     border: 2px solid black;
-    margin-bottom: 20px;
+    margin: 20px 15px 20px 15px;
     display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
-    transition: all 0.7s;
+    transition: all 0.2s;
     cursor: pointer;
     box-shadow: 5px 5px 10px 2px grey;
 }
@@ -265,12 +272,13 @@ body{
 /* Wrapper 5 */
 .wrapper5{
     text-align: center;
+    height: 100%;
 }
 
 .extraBody div{
-    margin-bottom: 15px;
+    margin: 15px 0px 5px 0px;
     display: inline-block;
-    transition: all 0.5s;
+    transition: all 0.2s;
     cursor: pointer;
 }
 
@@ -280,7 +288,7 @@ body{
 }
 
 .extraBody div h2{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .guidonBody{
@@ -301,8 +309,8 @@ body{
 
 .guidonLogo{
     text-align: center;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
@@ -348,8 +356,8 @@ body{
 
 .basketLogo{
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
 
@@ -361,15 +369,11 @@ body{
 
 /* Wrapper 6 */
 .wrapper6{
-    height: 85%;
+    height: 100%;
     margin-bottom: 70px;
 }
 
 .skillsBody{
-    position: relative;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -25%);
     text-align: center;
 }
 
@@ -517,14 +521,22 @@ body{
 @media (max-width: 768px){
     .column-md-4{
         float: left;
-        width: 33%;
+        width: 50%;
     }
+    .wrapper3{
+        height: 110%;
+    }
+    .navbar-ul li a{
+        padding: 5px 15px;
+    }
+  
 }
 
 @media (max-width: 949px){
     .aboutBody div{
         margin-bottom: 40px;
     }
+
 }
 
 @media (min-width: 430px){

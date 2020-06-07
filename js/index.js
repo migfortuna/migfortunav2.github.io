@@ -12,25 +12,22 @@ function printText(id, sentence, speed)
 }
 
 
-// printText
-// (
-//     "name",
-//     "<span>MIGUEL ALEJANDRO GRAY FORTUNA</span>",
-//     100
-// );
+printText
+(
+    "name",
+    "<span>MIGUEL ALEJANDRO GRAY FORTUNA</span>",
+    100
+);
 
-// printText
-// (
-//     "role",
-//     "<span>JUNIOR FRONT END DEVELOPER</span>",
-//     70
-// );
+printText
+(
+    "role",
+    "<span>JUNIOR FRONT END DEVELOPER</span>",
+    70
+);
 
 function openInNewTab(url) {
     var win = window.open(url, '_blank');
     win.focus();
 }
 
-function backWhite(){
-    document.getElementById("guidonLogo").
-}
