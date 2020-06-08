@@ -30,7 +30,12 @@ body{
 
 /* All Headers */
 .wrapperHeader{
-    text-align: center;
+    text-align: left;
+    margin-left: 45px;
+}
+
+.wrapperHeader:nth-child(2){
+    text-align: right;
 }
 
 .wrapperHeader h1{
@@ -98,7 +103,7 @@ body{
 .section1{
     text-align: center;
     position: relative;
-    top: 25%;
+    top: 30%;
 }
 
 .header{
@@ -275,16 +280,15 @@ body{
     height: 100%;
 }
 
-.extraBody div{
-    margin: 15px 0px 5px 0px;
-    display: inline-block;
-    transition: all 0.2s;
-    cursor: pointer;
+.extraBody{
+    margin: 0 35px 0 35px;
 }
 
-.extraBody div *{
-    margin-left: 10px;
-    margin-right: 10px;
+.extraBody div{
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
 }
 
 .extraBody div h2{
@@ -307,15 +311,6 @@ body{
     color: white;
 }
 
-.guidonLogo{
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-}
-
 .misaBody{
     border: 3px solid #008081;
     color: #008081;
@@ -330,12 +325,6 @@ body{
 .misaBody:hover{
     background-color: #008081;
     color: white;
-}
-
-.misaLogo{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
 }
 
 .basketBody{
@@ -354,11 +343,7 @@ body{
     color: white;
 }
 
-.basketLogo{
-    text-align: center;
-    width: 45px;
-    height: 45px;
-}
+
 
 
 
@@ -446,6 +431,9 @@ body{
         width: 200px;
         height: 200px;
     }
+    .extraBody div{
+        margin-bottom: 1px;
+    }
 }
 
 
@@ -509,6 +497,9 @@ body{
         width: 200px;
         height: 200px;
     }
+    .extraBody div{
+        margin-bottom: 1px;
+    }
 }
 
 
@@ -528,6 +519,10 @@ body{
     }
     .navbar-ul li a{
         padding: 5px 15px;
+    }
+    .wrapperHeader{
+        text-align: center;
+        margin-left: 0px;
     }
   
 }
